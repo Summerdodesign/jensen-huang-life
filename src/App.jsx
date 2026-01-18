@@ -1,7 +1,13 @@
 import React, { useState } from 'react';
 import { ChevronRight, Sparkles, Trophy, Star, Award } from 'lucide-react';
+import TravelGuide from './TravelGuide';
 
 function App() {
+  const [showTravelGuide, setShowTravelGuide] = useState(true);
+
+  if (showTravelGuide) {
+    return <TravelGuide />;
+  }
   const [currentScene, setCurrentScene] = useState(0);
   const [choices, setChoices] = useState([]);
   const [showResult, setShowResult] = useState(false);

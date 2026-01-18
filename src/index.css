@@ -6,3 +6,27 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
 }
+
+/* Leaflet地图样式 */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+/* 自定义标记样式 */
+.custom-marker {
+  background: transparent !important;
+  border: none !important;
+}
+
+/* 移动端优化 */
+@media (max-width: 640px) {
+  .leaflet-container {
+    font-size: 12px;
+  }
+  
+  .leaflet-popup-content-wrapper {
+    font-size: 12px;
+  }
+}
